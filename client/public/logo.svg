@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 110">
+  <defs>
+    <linearGradient id="circleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" /> <!-- green-500 -->
+      <stop offset="100%" style="stop-color:#15803d;stop-opacity:1" /> <!-- green-700 -->
+    </linearGradient>
+  </defs>
+
+  <!-- Icon Section -->
+  <g transform="translate(10, 10)">
+    <!-- Green Circle Background -->
+    <circle cx="45" cy="45" r="45" fill="url(#circleGrad)" />
+    
+    <!-- White Cross (Rounded) -->
+    <!-- Vertical -->
+    <rect x="30" y="18" width="30" height="54" rx="5" fill="white" />
+    <!-- Horizontal -->
+    <rect x="18" y="30" width="54" height="30" rx="5" fill="white" />
+    
+    <!-- Leaf Accent (Top Right) -->
+    <g transform="translate(55, 10)">
+       <!-- Leaf Shape -->
+       <path d="M0 25 Q 25 0 25 25 Q 15 40 0 32 Z" fill="#a3e635" stroke="white" stroke-width="2"/>
+       <!-- Leaf Vein -->
+       <path d="M0 25 Q 12 12 25 25" fill="none" stroke="white" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- Text Section -->
+  <g transform="translate(115, 65)">
+    <!-- Dharti -->
+    <text font-family="Arial, sans-serif" font-weight="900" font-size="52" fill="#14532d">Dharti</text>
+    <!-- MEDICAL -->
+    <text x="5" y="25" font-family="Arial, sans-serif" font-weight="bold" font-size="18" letter-spacing="5" fill="#0f172a">MEDICAL</text>
+  </g>
+</svg>
