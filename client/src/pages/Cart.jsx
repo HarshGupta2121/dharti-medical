@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useCart } from '../context/CartContext';
 import { useNavigate, Link } from 'react-router-dom';
-import { Trash2, Plus, Minus, ArrowRight, CreditCard, Wallet, Banknote } from 'lucide-react';
+import { Trash2, Plus, Minus, ArrowRight, CreditCard, Wallet, Banknote, Truck } from 'lucide-react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
@@ -276,10 +276,6 @@ const Cart = () => {
                         </div>
                     </div>
                 </div>
-
-            </div>
-        </div>
-    );
 
             </div>
         </div>
