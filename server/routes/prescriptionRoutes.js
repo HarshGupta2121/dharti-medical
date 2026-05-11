@@ -15,7 +15,7 @@ router.post('/upload', upload.single('image'), async (req, res) => {
 
         const { patientName, patientPhone, deliveryAddress, additionalNotes, userId } = req.body;
 
-        const imagePath = `/uploads/prescriptions/${req.file.filename}`;
+        const imagePath = req.file.path; // Cloudinary returns the full URL in req.file.path
 
         const prescription = await Prescription.create({
             user: userId || null,
