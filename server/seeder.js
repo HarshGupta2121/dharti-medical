@@ -4,7 +4,8 @@ const products = require('./data/products');
 const Product = require('./models/Product');
 const User = require('./models/User');
 
-dotenv.config({ path: '../.env' }); // Adjust path if .env is in root or server root
+const path = require('path');
+dotenv.config({ path: path.join(__dirname, '../.env') });
 
 const importData = async () => {
     try {
